@@ -11,6 +11,20 @@ var MatchGame = {};
 
 MatchGame.generateCardValues = function () {
 
+  var numbers = [];
+  console.log(numbers);
+  for(i = 1; i < 9; i++){
+    numbers.push(i);
+    numbers.push(i);
+  };
+
+  var random = [];
+  while(numbers.length > 0){
+    var access = Math.floor(Math.random() * numbers.length);
+    random.push(numbers[access]);
+    numbers.splice(access, 1);
+  };
+  return random; 
 };
 
 /*
@@ -19,7 +33,12 @@ MatchGame.generateCardValues = function () {
 */
 
 MatchGame.renderCards = function(cardValues, $game) {
+  ($game).empty();
+  var zaehler = 0;
+  while(zaehler < cardValues.length){
 
+    zaehler = zaehler + 1;
+  };
 };
 
 /*

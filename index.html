@@ -1,14 +1,74 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Match Game</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.png">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <link href="./resources/css/reset.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./resources/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./resources/css/style.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900" rel="stylesheet">
+  </head>
+
 <body>
+
+
+<div class="container-fluid offset">
+  <div class="row">
+    <div class="col-md-3 col-sm-12" id="instructions" >
+        <h1>Match Game</h1>
+        <h3>Rules</h3>
+        <p>Click on a card to reveal the number on the other side. Click on a second card to try and find a match to the first. If you succeed, the pair will be removed from play. If not, try again!</p>
+        <h3>How To Win</h3>
+        <p>You win when all pairs have been found.</p>
+    </div>
+    <div class="col-md-9 cold-sm-12" id="game">
+      <div class="row">
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+        <div class="col-xs-3 card"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+
+  <script src="./resources/js/bootstrap.min.js"></script>
   <script
     src="https://code.jquery.com/jquery-3.1.1.min.js"
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
   <script type="text/javascript" src="./resources/js/match-game.js"></script>
   <script type="text/javascript" src="./resources/js/tests.js"></script>
-</body>
+  </body>
 </html>
